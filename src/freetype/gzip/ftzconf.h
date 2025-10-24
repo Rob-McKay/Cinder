@@ -217,6 +217,8 @@
 
 #if !defined(MACOS) && !defined(TARGET_OS_MAC)
 typedef unsigned char  Byte;  /* 8 bits */
+#else
+typedef uint8_t Byte;
 #endif
 typedef unsigned int   uInt;  /* 16 bits or more */
 typedef unsigned long  uLong; /* 32 bits or more */
